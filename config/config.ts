@@ -4,12 +4,12 @@ import routes from './routes';
 // ref: https://umijs.org/config/
 const __DEV__ = process.env.NODE_ENV === 'development';
 
+
 const config: IConfig = {
   routes,
   generateCssModulesTypings: __DEV__,
   treeShaking: true,
-  plugins: [
-    // ref: https://umijs.org/plugin/umi-plugin-react.html
+  plugins:[
     [
       'umi-plugin-react',
       {
@@ -24,14 +24,6 @@ const config: IConfig = {
           enable: true,
           default: 'zh-CN',
         },
-      },
-    ],
-    [
-      'umi-plugin-eslint',
-      // eslint-loader options:
-      {
-        ignore: true, // 启用 .eslintignore
-        useEslintrc: true, // 启用 .eslintrc
       },
     ],
   ],
