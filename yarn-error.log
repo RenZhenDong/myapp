@@ -1,0 +1,142 @@
+Arguments: 
+  /Users/Forrest/.nvs/node/10.16.3/x64/bin/node /Users/Forrest/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/Forrest/.nvs/node/10.16.3/x64/bin:/Users/Forrest/.yarn/bin:/Users/Forrest/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/mysql/bin:/usr/local/mysql/support-files
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.16.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@react-hook%2fwindow-scroll: ETIMEDOUT
+      at Timeout._onTimeout (/Users/Forrest/.yarn/lib/cli.js:141408:19)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+      at Timer.processTimers (timers.js:223:10)
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "npm run start-dev",
+      "start-dev": "cross-env UMI_ENV=dev umi dev",
+      "start-qa": "cross-env UMI_ENV=qa umi dev",
+      "start-prod": "cross-env UMI_ENV=prod umi dev",
+      "build-dev": "cross-env UMI_ENV=dev-remote umi build",
+      "build-qa": "cross-env UMI_ENV=qa-remote umi build",
+      "build-prod": "cross-env UMI_ENV=prod-remote umi build",
+      "start-mock": "cross-env UMI_ENV=mock umi dev",
+      "build": "umi build",
+      "test": "umi test",
+      "lint": "eslint {src,mock,tests}/**/*.{ts,tsx} --fix",
+      "precommit": "lint-staged"
+    },
+    "dependencies": {
+      "@react-hook/window-scroll": "^1.1.5",
+      "@sentry/browser": "^5.15.5",
+      "antd-mobile": "^2.3.1",
+      "array-move": "^2.2.1",
+      "braft-editor": "^2.3.9",
+      "braft-extensions": "^0.1.0",
+      "braft-utils": "^3.0.12",
+      "browser-cookies": "^1.2.0",
+      "classnames": "^2.2.6",
+      "clipboard": "^2.0.6",
+      "dayjs": "^1.8.22",
+      "final-form": "^4.18.7",
+      "html2canvas": "^1.0.0-rc.5",
+      "intersection-observer": "^0.10.0",
+      "lodash-es": "^4.17.15",
+      "moment": "^2.24.0",
+      "nanoid": "^2.1.11",
+      "nuka-carousel": "^4.6.7",
+      "object-diff": "0.0.4",
+      "path-to-regexp": "^6.1.0",
+      "query-string": "^6.11.1",
+      "react": "^16.13.0",
+      "react-color": "^2.18.0",
+      "react-copy-to-clipboard": "^5.0.2",
+      "react-dnd": "^10.0.2",
+      "react-dnd-html5-backend": "^10.0.2",
+      "react-dom": "^16.13.0",
+      "react-final-form": "^6.3.4",
+      "react-final-form-hooks": "^2.0.2",
+      "react-helmet": "^5.2.1",
+      "react-qmap": "^0.1.6",
+      "react-sortable-hoc": "^1.11.0",
+      "react-sticky": "^6.0.3",
+      "react-transition-group": "^4.3.0",
+      "styled-components": "^5.0.1",
+      "umi-request": "^1.2.19",
+      "url": "^0.11.0"
+    },
+    "devDependencies": {
+      "@types/classnames": "^2.2.9",
+      "@types/clipboard": "^2.0.1",
+      "@types/express": "^4.17.2",
+      "@types/jest": "^23.3.12",
+      "@types/lodash-es": "^4.17.3",
+      "@types/mockjs": "^1.0.2",
+      "@types/nanoid": "^2.1.0",
+      "@types/object-diff": "0.0.0",
+      "@types/react": "^16.9.23",
+      "@types/react-color": "^3.0.1",
+      "@types/react-copy-to-clipboard": "^4.3.0",
+      "@types/react-dom": "^16.9.5",
+      "@types/react-helmet": "^5.0.15",
+      "@types/react-loadable": "^5.5.3",
+      "@types/react-sticky": "^6.0.3",
+      "@types/react-test-renderer": "^16.9.2",
+      "@types/styled-components": "^5.0.1",
+      "@types/tinycolor2": "^1.4.2",
+      "@typescript-eslint/eslint-plugin": "^2.20.0",
+      "babel-eslint": "^10.0.3",
+      "babel-plugin-import": "^1.13.0",
+      "cos-js-sdk-v5": "^0.5.24",
+      "cross-env": "^7.0.2",
+      "eslint": "^6.8.0",
+      "eslint-config-umi": "^1.6.0",
+      "eslint-plugin-flowtype": "^4.6.0",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-jsx-a11y": "^6.2.3",
+      "eslint-plugin-react": "^7.11.1",
+      "eslint-plugin-react-hooks": "^2.5.0",
+      "lint-staged": "^7.2.2",
+      "mockjs": "^1.1.0",
+      "prettier": "2.0.4",
+      "react-rnd": "^10.1.7",
+      "react-test-renderer": "^16.13.0",
+      "roadhog-api-doc": "^1.1.2",
+      "typescript": "^3.8.2",
+      "umi": "^2.13.3",
+      "umi-plugin-eslint": "^1.0.0",
+      "umi-plugin-react": "^1.15.2",
+      "umi-types": "^0.5.12"
+    },
+    "lint-staged": {
+      "*.{ts,tsx}": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.{js,jsx}": [
+        "eslint --fix",
+        "git add"
+      ]
+    },
+    "engines": {
+      "node": ">=8.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
