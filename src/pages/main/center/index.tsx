@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './index.less';
-import { findUser, deleteUser } from '@/services/query/index';
+import { findUser, gettheme } from '@/services/query/index';
 import { useSelector } from 'react-redux';
 import { State } from '@/pages/models/index';
 
@@ -18,6 +18,9 @@ const Center: React.FC<Props> = React.memo<Props>(function Main(props) {
       setUserData(res.data);
     });
   }
+  useEffect(() => {
+    gettheme().then();
+  }, []);
   return (
     <div className={styles.content} style={{ left: left }}>
       我的
