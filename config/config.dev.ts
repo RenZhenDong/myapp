@@ -7,7 +7,7 @@ export default {
   },
   proxy: {
     '/proxy': {
-      target: 'http://192.168.1.86:3001', // 使用对应config/config.dev.ts配置
+      target: 'http://192.168.1.66:3001', // 使用对应config/config.dev.ts配置
       changeOrigin: true,
       pathRewrite: { '^/proxy': '' },
     },

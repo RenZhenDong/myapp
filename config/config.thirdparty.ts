@@ -28,7 +28,7 @@ export const defaultConfig: Config = {
   allowOrigin: [
     'http://9.138.238.173',
     'https://9.138.238.173',
-    'https://test.finance.cloud.tencent.com',
+    'https://test.finance.cloud.hahhahah.com',
   ],
   subApp: {
     market: {
@@ -57,12 +57,14 @@ export const defaultConfig: Config = {
 
     '/data': {
       title: '有数',
-      url: 'https://wechat.sparta.html5.qq.com//dc/api/user/loginBaoLong?refer=baolong',
+      url:
+        'https://wechat.sparta.html5.qq.com//dc/api/user/loginBaoLong?refer=baolong',
     },
 
     '/youshu': {
       title: '有数',
-      url: 'https://wechat.sparta.html5.qq.com//dc/api/user/loginBaoLong?refer=baolong',
+      url:
+        'https://wechat.sparta.html5.qq.com//dc/api/user/loginBaoLong?refer=baolong',
     },
   },
 };
