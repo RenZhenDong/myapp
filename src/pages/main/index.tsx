@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styles from './index.less';
-import { useSelector, useDispatch, useStore } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Center } from './center/index';
 import { Find } from './find/index';
 import { World } from './world/index';
